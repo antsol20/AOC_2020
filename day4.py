@@ -48,7 +48,9 @@ def test(datas):
         if data['ecl'] not in ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']:
             return 0
 
-        
+        if len(data['pid']) != 0:
+            return 0
+
     return 1
 
 
