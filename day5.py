@@ -24,3 +24,11 @@ for row in input:
 
 print(max(maxlist))
 
+maxlist.sort()
+for idx, item in enumerate(maxlist):
+    if maxlist[idx + 1] != item + 1:
+        print(item, item + 1)
+
+
+
+
